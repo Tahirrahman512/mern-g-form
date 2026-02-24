@@ -1,0 +1,239 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0ebf8;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background: #ffffff;
+  width: 100%;
+  border-top: 10px solid #3d8f2d;
+  max-width: 600px;
+  padding: 30px;
+  border-left: 10px solid #4285F4;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+form h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  border-bottom: 4px solid #3d8f2d;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #3d8f2d;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  background-color: #3d8f2d;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4b9c3a;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialogue-box {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.dialogue-box h2 {
+  margin-bottom: 10px;
+}
+
+.dialogue-box button {
+  background-color: #3d8f2d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.input-group {
+  padding: 20px;
+  background: white;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.input-group label {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: start;
+  font-size: 16px;
+  color: #202124;
+}
+
+.required { color: #d93025; }
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.clear-form {
+  color: #3d8f2d;
+  cursor: pointer;
+  font-size: 14px;
+  outline: 1px solid #3d8f2d;
+  
+}
+.clear-link {
+  color: #3d8f2d;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: 1px solid #3d8f2d;
+  
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(4px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Content Card */
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: slideUp 0.4s ease-out;
+}
+
+.modal-body {
+  padding: 24px;
+  text-align: center;
+}
+
+.modal-body h2 {
+  color: #202124;
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.error-text { color: #d93025; font-size: 12px; padding: 0 24px; }

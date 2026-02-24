@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },"scripts": {
+  "server": "cd server && node server.js",
+  "g-form": "cd g-form && npm run dev",
+  "dev": "concurrently \"npm run server\" \"npm run g-form\""
+}
+}
